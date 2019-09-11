@@ -9,12 +9,12 @@ fi
 SRC_PATH=$1
 DST_PATH=$2
 
-export GH_USERNAME="jenkins-x-bot-test"
-export GH_EMAIL="jenkins-x@googlegroups.com"
+export GH_USERNAME="jenkins-x-dev"
+export GH_EMAIL="rbizzell@burwood.com"
 export GH_OWNER="cb-kubecd"
 
-export GH_CREDS_PSW="$(jx step credential -s jenkins-x-bot-test-github)"
-export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
+export GH_CREDS_PSW="$(jx step credential -s jenkins-x-dev-github)"
+export JENKINS_CREDS_PSW="$(jx step credential -s  dev-jenkins-user)"
 export GKE_SA="$(jx step credential -k bdd-credentials.json -s bdd-secret -f sa.json)"
 
 # fix broken `BUILD_NUMBER` env var
@@ -32,7 +32,7 @@ gcloud auth activate-service-account --key-file $GKE_SA
 
 # lets setup git 
 git config --global --add user.name JenkinsXBot
-git config --global --add user.email jenkins-x@googlegroups.com
+git config --global --add user.email rbizzell@burwood.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 

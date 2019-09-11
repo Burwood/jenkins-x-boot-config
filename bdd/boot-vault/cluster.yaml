@@ -4,11 +4,11 @@ clusters:
       - create
       - cluster
       - gke
-      - --project-id=jenkins-x-bdd2
+      - --project-id=jenkins-x-dev
       - -m=n1-standard-2
       - --min-num-nodes=3
       - --max-num-nodes=5
-      - -z=europe-west1-c
+      - -z=us-east1-b
       - --skip-login
       - --skip-installation
     commands:

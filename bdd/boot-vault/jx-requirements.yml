@@ -3,7 +3,7 @@ cluster:
   environmentGitOwner: cb-kubecd
   project: jenkins-x-bdd2
   provider: gke
-  zone: europe-west1-c
+  zone: us-east1-b
 environments:
   - key: dev
     owner: ""
