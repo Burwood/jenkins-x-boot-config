@@ -13,7 +13,7 @@ ingress:
   domain: ""
   externalDNS: false
   tls:
-    email: ""
+    email: "rbizzell@burwood.com"
     enabled: false
     production: false
 kaniko: true

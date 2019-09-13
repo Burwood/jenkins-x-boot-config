@@ -2,7 +2,7 @@
 set -e
 set -x
 
-if [ $# -ne 2 ]; then
+if [[ $# -ne 2 ]]; then
     echo "Please provide the source and destination paths for configuration"
     exit -1
 fi
