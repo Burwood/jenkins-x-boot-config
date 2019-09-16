@@ -1,0 +1,34 @@
+cluster:
+  clusterName: ""
+  environmentGitOwner: ""
+  project: ""
+  provider: gke
+  zone: ""
+gitops: true
+environments:
+- key: dev
+- key: staging
+- key: production
+ingress:
+  domain: ""
+  externalDNS: true
+  tls:
+    email: "rbizzell@burwood.com"
+    enabled: true
+    production: true
+kaniko: false
+secretStorage: local
+storage:
+  logs:
+    enabled: false
+    url: ""
+  reports:
+    enabled: false
+    url: ""
+  repository:
+    enabled: false
+    url: ""
+versionStream:
+  ref: "master"
+  url: https://github.com/jenkins-x/jenkins-x-versions.git
+webhook: prow

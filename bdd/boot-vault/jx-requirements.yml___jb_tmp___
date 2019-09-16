@@ -1,0 +1,40 @@
+cluster:
+  clusterName: bdd-boot-v
+  environmentGitOwner: cb-kubecd
+  project: jenkins-x-dev
+  provider: gke
+  zone: us-east1-b
+environments:
+  - key: dev
+    owner: "jx"
+    repository: ""
+  - key: staging
+    owner: ""
+    repository: ""
+  - key: production
+    owner: ""
+    repository: ""
+ingress:
+  domain: "private.burwood.com"
+  externalDNS: true
+  tls:
+    email: ""
+    enabled: true
+    production: true
+kaniko: false
+secretStorage: local
+storage:
+  logs:
+    enabled: true
+    url: "gs://jx-bdd-log-store"
+  reports:
+    enabled: true
+    url: "gs://jx-bdd-log-store"
+  repository:
+    enabled: true
+    url: "gs://jx-bdd-repo"
+versionStream:
+  ref: "master"
+  url: https://github.com/jenkins-x/jenkins-x-versions.git
+webhook: prow
+
