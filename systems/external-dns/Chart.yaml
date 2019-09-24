@@ -1,5 +1,0 @@
-description: External-DNS Chart
-maintainers:
-- name: Team
-name: external-dns
-version: "1"
