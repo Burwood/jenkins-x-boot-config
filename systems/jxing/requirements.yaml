@@ -1,4 +1,4 @@
 dependencies:
-- alias: spinnaker-ingress
-  name:  spinnaker-ingress
+- alias: nginx-ingress
+  name:  nginx-ingress
   repository: https://kubernetes-charts.storage.googleapis.com
