@@ -45,7 +45,7 @@ ingress:
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
-    email: rbizzell@burwood.com
+    email: ""
     enabled: false
     production: false
 kaniko: true
