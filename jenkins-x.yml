@@ -51,18 +51,6 @@ pipelineConfig:
             - --no-vault
             - --name
             - jxing
-          #  command: jx
-          #  dir: /workspace/source/systems/jxing
-          #  env:
-          #  - name: DEPLOY_NAMESPACE
-          #   value: kube-system
-          #  name: install-nginx
-         # - args:
-          #  - step
-          #  - create
-          #  - install
-          #  - values
-          #  - -b
             command: jx
             dir: /workspace/source/env
             name: create-install-values
@@ -75,14 +63,6 @@ pipelineConfig:
             - --no-vault
             - --name
             - jx
-          #  command: jx
-           # dir: /workspace/source/systems/external-dns
-          #  name: install-external-dns
-        #  - args:
-          #  - apply
-          #  - --wait
-           # - --validate=true
-           # - -f
             - https://raw.githubusercontent.com/jetstack/cert-manager/release-0.8/deploy/manifests/00-crds.yaml
             command: kubectl
             dir: /workspace/source
